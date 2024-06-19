@@ -12,8 +12,8 @@ def leggi_pulisci_testo(nome_file):
             for riga in testo:
                 if riga.startswith('*** END OF THIS'):
                     break
-
-            elabora_riga(riga, lista_testo)
+                else:
+                    elabora_riga(riga, lista_testo)
 
             return lista_testo
         
@@ -42,7 +42,8 @@ def elabora_riga(riga, lista):
     """
     riga = riga.replace('-', ' ')  # metodo delle stringhe replace vedi docs https://docs.python.org/3/library/stdtypes.html#string-methods
 
-    for parola in riga.split(' '):  # suddivide la riga in una lista di stringhe
+    for parola in riga.split():  # suddivide la riga in una lista di stringhe
+        parola = parola.strip()
         parola = parola.lower()  # converti tutto in lettere minuscole (in realtà crea una nuova stringa dato che sono immutabili)
         lista.append(parola)  # aggiungi ciascuna parola alla lista
 
@@ -50,4 +51,5 @@ def elabora_riga(riga, lista):
 
 
 #ESECUZIONE
-t = leggi_pulisci_testo(prova.txt)
+t = leggi_pulisci_testo('prova.txt')
+print(t)
