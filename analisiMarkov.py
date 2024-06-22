@@ -30,7 +30,7 @@ def leggi_pulisci_testo(nome_file):
 
 
 def taglia_testo(testo):
-    """Legge da 'testo' finché non trova la riga che termina l'intestazione
+    """Legge da 'testo' finché non trova la riga che termina l'intestazione, in pratica rimuove l'intestazione fino alla riga specifica
 
     testo: oggetto file aperto
     """
@@ -80,7 +80,7 @@ def costruisci_catena_markov(lista_parole, lunghezza_prefisso=2):
 
 #ESECUZIONE
 if __name__ == "__main__":
-    testo_pulito = leggi_pulisci_testo('prova.txt')
+    testo_pulito = leggi_pulisci_testo('emma11.txt')
 
     # uso l'espressione bool 'if testo_pulito:' per controllare la veridicità di una variabile; controlla che la variabile non sia 'None' o da altri valori "falsi", come ad esempio liste vuote; 
     # questo approccio è in linea con le convenzioni Python e rende il codice più chiaro e leggibile
@@ -90,3 +90,5 @@ if __name__ == "__main__":
 
         for chiave, valore in catena_markov.items():
             print(f"{chiave}: {valore}")
+    else:
+        print("Il testo è vuoto o non è stato letto correttamente.")     
