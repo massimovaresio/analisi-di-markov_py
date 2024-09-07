@@ -21,4 +21,4 @@ In conclusione, l'aumento della lunghezza del prefisso nell'implementazione dell
 
 
 ### Licenza
-Questo progetto è liberamente utilizzabile e replicabile, nel rispetto dei termini della licenza [CC 4.0](https://creativecommons.org/licenses/by/4.0/).
+Questo progetto è liberamente utilizzabile e replicabile, nel rispetto dei termini della licenza [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
