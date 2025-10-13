@@ -20,5 +20,5 @@ In conclusione, l'aumento della lunghezza del prefisso nell'implementazione dell
 **Piccolo bug**: nei casi in cui la lunghezza del prefisso è bassa, 2 o 3 parole, è possibile che alcuni suffissi siano più di una singola parola. In questo modo può succedere che andando via via ad aggiungere i suffissi al testo generato, lo stesso testo risulti di qualche parola più lungo rispetto al valore inserito dall'utente. Tuttavia ai fini dell'esperimento mi è sembrato un bug tollerabile; se qualcuno ha suggerimenti su come migliorare è benvenuto :blush:
 
 
-### Licenza
-Questo progetto è liberamente utilizzabile e replicabile, nel rispetto dei termini della licenza [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+### Riuso e licenze
+Questo progetto è liberamente utilizzabile e replicabile, come descritto nei termini di licenza del file `LICENSE.md`.
